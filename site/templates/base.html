@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<div class="container">
+    <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+                <a class="link-secondary" href="/create_article"><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Создать статью</font></font></a>
+            </div>
+            <div class="col-4 text-center">
+                <a class="blog-header-logo text-dark" href="http://127.0.0.1:5000/"><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Кофе, почему бы и
+                    нет?</font></font></a>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <a class="link-secondary" href="#" aria-label="Поиск">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
+                         viewBox="0 0 24 24"><title>Search</title>
+                        <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                        <path d="M21 21l-5.2-5.2"></path>
+                    </svg>
+                </a>
+                <a class="btn btn-sm btn-outline-secondary" href="/register"><font
+                        style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Зарегистрироваться</font></font></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+            <a class="p-2 link-secondary" href="/coffee"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Кофе</font></font></a>
+            <a class="p-2 link-secondary" href="/eto"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">это</font></font></a>
+            <a class="p-2 link-secondary" href="#"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Технология</font></font></a>
+            <a class="p-2 link-secondary" href="#"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Культура</font></font></a>
+            <a class="p-2 link-secondary" href="#"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Мнение</font></font></a>
+            <a class="p-2 link-secondary" href="#"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Наука</font></font></a>
+            <a class="p-2 link-secondary" href="/posts"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Статьи</font></font></a>
+        </nav>
+    </div>
+</div>
+{% block body %}{% endblock %}
+
+
+<footer class="container pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+        <div class="col-12 col-md">
+            <img class="mb-2"
+                 src="https://png.pngtree.com/png-vector/20190129/ourlarge/pngtree-coffee-bean-icon-graphic-design-template-vector-png-image_358255.jpg"
+                 alt="" width="24" height="19">
+            <small class="d-block mb-3 text-muted">© 04.2021</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Функционал</h5>
+            <ul class="list-unstyled text-small">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Команда</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Случайная особенность</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Особенность команды</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Что-то еще</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Последний раз</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Ресурсы</h5>
+            <ul class="list-unstyled text-small">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Ресурсы</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Интернет</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Методичка</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Еще один интернет</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Команда</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Локации</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Конфиденциальность</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Условия</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
